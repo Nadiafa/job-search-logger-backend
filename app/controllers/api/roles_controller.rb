@@ -1,2 +1,2 @@
-class RolesController < ApplicationController
+class Api::RolesController < ApplicationController
 end
