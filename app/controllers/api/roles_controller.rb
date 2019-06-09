@@ -37,7 +37,7 @@ class Api::RolesController < ApplicationController
 	private
 
 	def role_params
-		params.require(:role).permit(:title, :description, :requirements, :location, :company, :closing_date)
+		params.fetch(:role).permit(:title, :description, :requirements, :location, :company, :url, :status)
 	end
 
 	def set_role
